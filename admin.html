@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"/>
+	<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/heatmapjs@2.0.2/heatmap.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/leaflet-heatmap@1.0.0/leaflet-heatmap.js"></script>
+
+	<title>Manage Http-system</title>
+</head>
+<link rel='shortcut icon' type='image/png' href='img/pngkey.com-renewable-energy-icon-png-3810080.png' />
+
+<body>
+	<div>
+		<h3 id="welcome" class="success_message"></h3>
+		</div>
+		<div class="topnav">
+			<a href="admin.html">Home</a>
+			<div class="topnav-right">
+				<a onclick="logout()">Logout</a>
+			</div>
+			<h4 style="color:white;" align="center">Manager Page</h4>
+		  </div>
+		<div id="mapid"></div>
+    
+            <div id="statssss" align="center">
+                <h3> Basic Stats </h3>
+                <table id="myTable">
+                        <tr>
+							<th>Users count</th>
+							<th>EntriesCount requestType</th>
+							<th>EntriesCount responseStatus</th>
+							<th>Unique Domains</th>
+							<th>tUniqueUserISPs</th>
+						</tr>
+					<tbody id="testBody2"></tbody>
+				</table>
+		
+					<div class="row">
+						<div class="col-md-12">
+							<h3> Timings Chart </h3>
+							<canvas id="timings-chart" width="400" height="100"></canvas>
+						</div>
+					</div>
+					<div class="flex-container">
+						<div class="flex-child ">
+							<div> ISPs selection </div>
+							<select class="form-control" id="d-isps" multiple> </select>
+						</div>
+						<div class="flex-child ">
+							<div> Content-Type selection </div>
+							<select class="form-control" id="d-contentTypes" multiple> </select>
+						</div>
+						<div class="flex-child ">
+							<div> Methods selection </div>
+							<select class="form-control" id="d-methods" multiple> </select>
+						</div>
+						<div class="flex-child ">
+							<div> Days selection </div>
+							<select class="form-control" id="d-days" multiple> </select>
+						</div>
+					</div>
+				
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+	<script type="text/javascript" src="js/admin.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/1.3.8/FileSaver.js"></script>
+	<script
+ 	src="https://code.jquery.com/jquery-3.4.1.min.js"
+  	integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+	  crossorigin="anonymous"></script>
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=egde">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<title>WEB</title>
+	</head>
+	<link rel='shortcut icon' type='image/png' href='img/pngkey.com-renewable-energy-icon-png-3810080.png' />
+	
+	<body>
+		<div>
+		<div class="login-page">
+			<div class="header">
+				<font face="Montserrat" size="20px" color="#FFFFFF">Http Movement</font>
+			  </div>
+			<div class="form">
+			  <form class="login-form">
+				<input id="username" class="login-input" type="text" placeholder="Όνομα χρήστη"/>
+				<input id="password" class="login-input" type="password" placeholder="Κωδικός"/>
+				<button type="button" onclick="login()">login</button>
+				<p class="message">Not registered? <a href="register.html">Create an account</a></p>
+			  </form>
+			</div>
+		  </div>
+		</div>
+	    <script type="text/javascript" src="js/login.js"></script>
+	    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+		<script>$('.message a').click(function(){
+			$('form').animate({height: "toggle", opacity: "toggle"}, "slow");
+		 });</script>
+</body>
+</html>
